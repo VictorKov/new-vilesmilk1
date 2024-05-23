@@ -85,7 +85,7 @@ body{
     color: #fff;
 }
 
-/* Продукция */
+/* Продукция Главная*/
 .list_box_with_cap{
     display: flex;
     margin: 0;
@@ -111,6 +111,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.25);
 }
 
 .box_with_cap_item_img img{
@@ -139,6 +140,45 @@ body{
     text-decoration: none;
     text-align: center;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-left: 30px;
+}
+
+.list_box {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item_list_box {
+    width: 300px;
+    margin: 10px 25px;
+    list-style: none;
+}
+
+.item_list_box_img {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.25);
+}
+
+.item_list_box_img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+.item_list_box_description {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #06438E;
 }
