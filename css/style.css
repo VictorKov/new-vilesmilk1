@@ -5,6 +5,7 @@ body {
     background-image: url(../img/bg-main.png);
     font-family: 'Roboto', sans-serif;
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     height: 9290px;
@@ -295,4 +296,12 @@ section{
     font-style: italic;
     text-align: center;
     padding: 15px 200px;
+}
+
+.icons{
+    height: 500px;
+    margin-top: 75px;
+    background: url(../img/bg-alpine.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
