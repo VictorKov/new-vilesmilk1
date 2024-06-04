@@ -2,12 +2,12 @@
 
 /* Общее */
 body {
-    background-image: url(../img/bg-main.png);
+    background-image: url(../img/фон1.png);
     font-family: 'Roboto', sans-serif;
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 9500px;
+    height: 10500px;
 }
 
 :root {
@@ -308,6 +308,7 @@ section {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
     padding: 0 40px;
     margin: 0;
     height: 100%;
@@ -356,4 +357,49 @@ section {
 .icons_item_text>p{
     text-align: center;
     font-style: italic;
+}
+
+/* Рецепты */
+
+.recipes_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipes_item {
+    max-width: 400px;
+    list-style: none;
+    
+}
+
+.recipes_item:nth-child(2){
+    margin: 0 56px;
+}
+
+.recipes_item>img{
+    display: block;
+    width: 400px;
+}
+
+.recipes_item_header {
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    margin: 22.4px 0;
+    max-width: 390px;
+    padding: 15px 120px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    background-color: #DF902B;
+    border-radius: 15px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Схема проезда */
+.transit>img{
+    display: block;
+    margin: 0 auto;
 }
