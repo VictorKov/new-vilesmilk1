@@ -7,7 +7,6 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
-    height: 10500px;
 }
 
 :root {
@@ -20,6 +19,7 @@ section {
 
 .container {
     padding: 0 155px;
+    box-sizing: border-box;
 }
 
 .header-1 {
@@ -234,6 +234,12 @@ section {
 .swiper-pagination {
     text-align: left;
     position: static;
+    margin-top: 10px;
+}
+
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
 }
 
 /* Представительство в торговых сетях */
@@ -345,21 +351,23 @@ section {
     display: block;
     width: 70px;
 }
+
 .icons_item_text {
     height: 285px;
     width: 300px;
     padding: 25px;
     margin: 52px 0 0 0;
     border-radius: 5%;
-    background-image: linear-gradient(to bottom,rgba(255,255,255), rgba(255,255,255,0.3));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.3));
 }
+
 .icons_item_text_header {
     color: #06438E;
     font-style: italic;
     text-align: center;
 }
 
-.icons_item_text>p{
+.icons_item_text>p {
     text-align: center;
     font-style: italic;
 }
@@ -371,17 +379,18 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .recipes_item {
     max-width: 400px;
     list-style: none;
-    
+
 }
 
-.recipes_item:nth-child(2){
+.recipes_item:nth-child(2) {
     margin: 0 56px;
 }
 
-.recipes_item>img{
+.recipes_item>img {
     display: block;
     width: 400px;
 }
@@ -404,7 +413,103 @@ section {
 }
 
 /* Схема проезда */
-.transit>img{
+.transit>img {
     display: block;
     margin: 0 auto;
+
+}
+
+/* Адреса */
+
+.address_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address_item {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+.address_item_header {
+    color: #06438E;
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 120px;
+    word-wrap: break-word;
+}
+
+.address_item_text {
+    width: 747px;
+    color: black;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 35px;
+    word-wrap: break-word;
+}
+
+.maps {
+    position: relative;
+    display: block;
+}
+
+.map_link {
+    position: absolute;
+    display: block;
+    bottom: 25px;
+    left: 25px;
+}
+
+.maps>img {
+    display: block;
+}
+
+/* Контакты */
+
+.contacts {
+    padding-bottom: 100px;
+}
+
+.contacts_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_item {
+    list-style: none;
+    width: 808px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 139px;
+    height: 139px;
+    background: linear-gradient(180deg, white 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 25px;
+}
+
+.contact_icon>img {
+    width: 94px;
+    height: 94px;
+}
+
+.contact_text {
+    display: flex;
+    align-items: center;
+    padding-left: 108px;
+    width: 747px;
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    word-wrap: break-word;
 }
