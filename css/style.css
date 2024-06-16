@@ -421,7 +421,7 @@ section {
 .transit>img {
     display: block;
     margin: 0 auto;
-
+    max-width: 100%;
 }
 
 /* Адреса */
@@ -533,13 +533,136 @@ section {
     line-height: 45px;
 }
 
-.about_text_img_item{
+.about_text_img_item {
     list-style: none;
 }
 
-.about_text_img_item>img{
+.about_text_img_item>img {
     display: block;
     margin: 15px 0;
     border-radius: 25px;
     box-shadow: var(--box-shadow);
+}
+
+/********************************************** 
+
+                Ассортимент
+
+**********************************************/
+
+/*-----------КАРТОЧКА ТОВАРА----------*/
+
+.card_row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* width: 380px!important; */
+    /* height: 500px !important; */
+    padding: 15px;
+    border-radius: 15px;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card_header {
+    text-align: center;
+    color: #06438E;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.card__img {
+    position: relative;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.card__img>img {
+    z-index: 999;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    object-fit: contain;
+    opacity: 1;
+}
+
+.long_img {
+    width: 200px;
+}
+
+.card:hover .card__img>img {
+    transform: translate(-200px, 0);
+    opacity: 0.8;
+}
+
+.card_body {
+    visibility: hidden;
+    left: 30%;
+    top: 12px;
+    z-index: 1;
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 60px 15px;
+    justify-self: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+}
+
+
+.card:hover .card_body {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(50px, 0);
+    top: 15px;
+    max-width: 200px;
+}
+
+.card__title {
+    margin: 0;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card__button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    background: blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.card__button:hover {
+    background: lightskyblue;
+    color: black;
 }
