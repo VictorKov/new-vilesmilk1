@@ -666,3 +666,187 @@ section {
     background: lightskyblue;
     color: black;
 }
+
+
+/********************************************** 
+
+                Рецепты
+
+**********************************************/
+
+.recipes {}
+
+.header_sections {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 120px;
+    word-wrap: break-word;
+    width: 405px;
+    height: 89px;
+    background: #DF902B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.recipes_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe_item {
+    list-style: none;
+}
+
+.header_recipes_one {
+    color: #074189;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+    text-align: center;
+}
+
+.triangle>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.text_recipe {
+    color: #074189;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 45px;
+    word-wrap: break-word
+}
+
+.recipe_img>img {
+    display: block;
+    border-radius: 45px;
+    box-shadow: var(--box-shadow);
+    margin: 25px auto;
+}
+
+.header_recipe {
+    text-align: center;
+    color: #06438E;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.ingredients_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients_item {
+    color: #06438E;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 45px;
+    padding: 0 15px;
+}
+
+.ingredients_item::marker {
+    content: "\2022";
+}
+
+.step_by_step_recipe {}
+
+.step_by_step_recipe_list {}
+
+.step_by_step_recipe_list_item {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.step_by_step_recipe_list_item_header {
+    padding: 0;
+    margin: 0;
+    color: #06438E;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+    word-wrap: break-word;
+}
+
+.step_by_step_recipe_list_item_text {
+    padding: 0;
+    margin: 0;
+    color: #06438E;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 45px;
+    word-wrap: break-word;
+}
+
+.recipe_border_bottom {
+    padding: 0;
+    width: calc(100% - 100px);
+    box-sizing: border-box;
+    margin: 50px auto 0;
+    border-bottom: 4px dashed #DF902B;
+
+}
+
+.history {}
+
+.history_text {
+    text-align: center;
+    color: #06438E;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+
+.history_text>img {
+    display: block;
+    margin: 0 auto;
+    display: block;
+    border-radius: 45px;
+    box-shadow: var(--box-shadow);
+}
+
+.lifehacks {}
+
+.conatiner {}
+
+.lifehucks_list {}
+
+.lifehucks_list_item {
+    list-style: none;
+    text-align: center;
+}
+
+.lifehucks_list_item_header {
+    color: #06438E;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+
+.lifehucks_list_item>p {
+    color: #06438E;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+}
+
+.lifehucks_list_item_text_bc-orange {}
+
+.lifehucks_list_item_list {}
+
+.lifehucks_list_item_list_item {}
+
+.lifehack_img_list {}
+
+.lifehack_img_list_item {}
