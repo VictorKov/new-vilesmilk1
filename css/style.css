@@ -30,13 +30,11 @@ section {
 
 .header-2 {
     color: #074189;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    letter-spacing: .3px;
-    font-size: 3em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 120px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .header-3 {}
@@ -51,8 +49,8 @@ section {
 .nav img {
     padding: 0 100px;
     display: block;
-    width: 110px;
-    height: 110px;
+    width: 180px;
+    height: 180px;
 }
 
 .nav_list {
@@ -80,8 +78,11 @@ section {
     padding: 0 5px;
     text-decoration: none;
     text-transform: lowercase;
-    color: #06438EFF;
-
+    color: #06438E;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 120px;
+    word-wrap: break-word;
 }
 
 /********************************************** 
@@ -150,13 +151,14 @@ section {
     display: block;
 }
 
-.description_box_with_cap {
-    color: #06438E;
-    font-weight: 600;
-    text-decoration: none;
+.description_box_with_cap,
+.item_list_box_description {
     text-align: center;
-    width: 100%;
-    font-size: 1.4em;
+    color: #06438E;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 30px;
+    word-wrap: break-word;
     margin-left: 30px;
 }
 
@@ -198,16 +200,21 @@ section {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
-.item_list_box_description {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #06438E;
-}
-
 /* Наше преимущество Главная */
 
 .lider {}
+
+.header-2_lider,
+.header-2_map,
+.header-2_recipes_index,
+.header-2_transit {
+    text-align: center;
+    color: #074189;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 100px;
+    word-wrap: break-word;
+}
 
 .lider_div {
     display: flex;
@@ -223,13 +230,21 @@ section {
 }
 
 .lider_div_text>p:first-child {
-    font-weight: 600;
+    color: #6C6C6C;
+    font-size: 30px;
     font-style: italic;
+    font-weight: 700;
+    line-height: 35px;
+    word-wrap: break-word;
 }
 
 .lider_div_text>p:not(:first-child) {
-    font-weight: 400;
+    color: #6C6C6C;
+    font-size: 30px;
     font-style: italic;
+    font-weight: 400;
+    line-height: 35px;
+    word-wrap: break-word;
 }
 
 .lider_div_slider {
@@ -291,15 +306,22 @@ section {
 
 /* География поставок */
 
-.with_point::before {
+.header-2_map {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.header-2_map::before {
+    position: absolute;
     content: '';
     background-image: url(../img/point.png);
     background-repeat: no-repeat;
     background-size: contain;
-    left: -10px;
-    width: 40px;
-    height: 40px;
-    padding-right: 25px;
+    top: 20%;
+    left: calc(100% - 80%);
+    width: 62px;
+    height: 62px;
 }
 
 .geografia>img {
@@ -308,15 +330,20 @@ section {
 }
 
 .geografia_text {
-    font-weight: 400;
-    font-style: italic;
+    margin: 25px auto;
     text-align: center;
-    padding: 15px 200px;
+    color: #656464;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+    width: 1300px;
 }
 
 .icons {
     background-image: url(../img/bg-alpine.png);
-    height: 1000px;
+    height: 1500px;
     background-size: cover;
 }
 
@@ -343,8 +370,8 @@ section {
 .icons_item_icon {
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 174px;
+    height: 174px;
     align-items: center;
     background-color: #fff;
     padding: 15px;
@@ -354,7 +381,7 @@ section {
 
 .icons_item_icon>img {
     display: block;
-    width: 70px;
+    width: 98px;
 }
 
 .icons_item_text {
@@ -367,54 +394,69 @@ section {
 }
 
 .icons_item_text_header {
-    color: #06438E;
-    font-style: italic;
     text-align: center;
+    color: #06438E;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 30px;
+    word-wrap: break-word;
 }
 
 .icons_item_text>p {
     text-align: center;
+    color: #323232;
+    font-size: 20px;
     font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    word-wrap: break-word;
 }
 
 /* Рецепты */
 
-.recipes_list {
+.recipes_index_list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.recipes_item {
-    max-width: 400px;
+.recipes_index_item {
+    max-width: 405px;
     list-style: none;
 
 }
 
-.recipes_item:nth-child(2) {
+.recipes_index_item:nth-child(2) {
     margin: 0 56px;
 }
 
-.recipes_item>img {
+.recipes_index_item>img {
     display: block;
-    width: 400px;
+    width: 405px;
 }
 
-.recipes_item_header {
+.recipes_index_item_header {
+    height: 90px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
     text-decoration: none;
     display: block;
     box-sizing: border-box;
     margin: 22.4px 0;
-    max-width: 390px;
-    padding: 15px 120px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-align: center;
+    max-width: 405px;
+    color: white;
+    font-size: 40px;
     font-style: italic;
-    color: #fff;
+    font-weight: 500;
+    line-height: 120px;
+    word-wrap: break-word;
     background-color: #DF902B;
     border-radius: 15px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: var(--box-shadow);
 }
 
 /* Схема проезда */
@@ -450,7 +492,6 @@ section {
     width: 747px;
     color: black;
     font-size: 30px;
-    font-family: Roboto;
     font-weight: 300;
     line-height: 35px;
     word-wrap: break-word;
@@ -508,6 +549,7 @@ section {
 }
 
 .contact_text {
+    text-decoration: none;
     display: flex;
     align-items: center;
     padding-left: 108px;
@@ -579,6 +621,7 @@ section {
     font-size: 25px;
     font-weight: 600;
     line-height: 25px;
+    word-wrap: break-word;
 }
 
 .card__img {
@@ -651,14 +694,21 @@ section {
 
 .card__button {
     display: block;
+    font-size: 35px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    width: 222px;
+    text-transform: lowercase;
     text-decoration: none;
     text-align: center;
     color: white;
     border-radius: 10px;
     margin-top: 20px;
-    box-sizing: border-box;
-    padding: 7px 10px;
-    background: blue;
+    box-shadow: var(--box-shadow);
+    padding: 12px 12px;
+    background: #5291E8;
     transition: all 0.3s ease-in-out;
 }
 
@@ -816,8 +866,6 @@ section {
 
 .lifehacks {}
 
-.conatiner {}
-
 .lifehucks_list {}
 
 .lifehucks_list_item {
@@ -841,12 +889,67 @@ section {
     word-wrap: break-word;
 }
 
-.lifehucks_list_item_text_bc-orange {}
+.lifehucks_list_item_text_bc-orange {
+    padding: 10px 50px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white !important;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 60px;
+    word-wrap: break-word;
+    background-color: #DF902B;
+    border-radius: 35px;
+}
 
 .lifehucks_list_item_list {}
 
-.lifehucks_list_item_list_item {}
+.lifehucks_list_item_list_item {
+    list-style: none;
+    color: #06438E;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 60px;
+    word-wrap: break-word;
+    text-align: left;
+    position: relative;
+    padding: 50px 0 0 50px;
+    box-sizing: border-box;
+}
 
-.lifehack_img_list {}
+.lifehucks_list_item_list_item::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #DF902B;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+}
 
-.lifehack_img_list_item {}
+.lifehucks_list_item>img {
+    display: block;
+    margin: 50px auto;
+}
+
+.lifehack_img_list {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+}
+
+.lifehack_img_list_item {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.lifehack_img_list_item>img {
+    display: block;
+    width: 400px;
+    height: 465px;
+    border-radius: 35px;
+    box-shadow: var(--box-shadow);
+}
